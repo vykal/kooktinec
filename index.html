@@ -8,10 +8,15 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Vitaj vo videochate</h1>
+  <h1>Videochat</h1>
   <video id="myVideo" autoplay muted playsinline></video>
+  <video id="remoteVideo" autoplay playsinline></video>
+
+  <p>Share this ID: <span id="myId"></span></p>
+  <input type="text" id="peerIdInput" placeholder="Zadaj druhé ID">
+  <button onclick="connectToPeer()">Pripojiť</button>
 
   <script src="script.js"></script>
-  
 </body>
+
 </html>
