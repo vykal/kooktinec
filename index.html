@@ -11,7 +11,7 @@
   <script>
     const localVideo = document.getElementById('localVideo');
     const remoteVideo = document.getElementById('remoteVideo');
-    const ws = new WebSocket('WSS_BACKEND_URL'); // <- neskôr nahradíme
+    const ws = new WebSocket('https://vine-midi-canoe.glitch.me'); // <- neskôr nahradíme
     const pc = new RTCPeerConnection();
 
     navigator.mediaDevices.getUserMedia({ video: true, audio: true }).then(stream => {
